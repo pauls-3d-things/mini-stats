@@ -40,7 +40,6 @@ app.get('/stats', (req, res) => {
         } else {
             stats.freeDisk = Math.floor((info.free / info.total) * 100);
         }
-        console.log(stats);
         res.send(stats);
     });
 
