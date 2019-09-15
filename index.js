@@ -6,7 +6,7 @@ const app = express()
 const port = 3000
 
 const toDoubleDigits = (num) => {
-    return num < 10 ? "0" : "" + Math.floor(num);
+    return (num < 10 ? "0" : "") + Math.floor(num);
 }
 
 const timeToString = (uptime) => {
